@@ -29,6 +29,7 @@ html{
 body{
     overflow: hidden;
     transition: .2s linear !important;
+    background-color: var(---hover--) !important;
 }
 body.active{
     padding-left: 35rem;
@@ -188,11 +189,17 @@ section{
     line-height: 1.5;
     font-size: 1.7rem;
 }
+.about{
+    min-height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+}
 .about .what-i-do .bio{
     margin-top: 1rem;
 }
 .bio h3 span{
-    display: flex !important;
+
     padding: 1rem 1.5rem ;
     display: inline-block;
     margin: 1rem ;
@@ -202,11 +209,53 @@ section{
     word-break: break-all ;
     cursor: pointer;
     font-weight: 500;
-    font-size: 2.5rem;
-
+    font-size: 2.3rem;
 }
 
+.skills{
+    min-height: 100vh;
+    justify-content: center;
+    
+}
+.skills-picture{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit , minmax(180px , 1fr)) !important ;
+    gap: 50px;
+    padding: 10px;
+    justify-content: center;
 
+    
+}
+.pict{
+    border-radius: 50% !important;
+    border: var(--border-bold-light);
+    cursor: pointer;
+    transition: .2s linear;
+}
+.pict:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/*  */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background:var(--color-text);
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color);
+  }
 
 
 @media (max-width:991px){
@@ -237,4 +286,8 @@ section{
     font-size:4rem ;
 
 }
+.skills-picture{
+    width: 50%;
+}
+
 }
