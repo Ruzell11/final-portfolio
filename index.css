@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Oswald:wght@200&family=Tai+Heritage+Pro:wght@700&display=swap');
+
+
+:root{
+    --color:#B58B00;
+    --bg:whitesmoke;
+    --color-text:black;
+    --border-bold: .5rem solid var(--color-text);
+    --border-bold-light: .2rem solid var(--color-text);
+    --border-bold--white: .2rem solid var(--bg);
+    ---hover--:beige
+
+}
+
+*{
+    text-decoration: none !important;
+    color: var(--color-text) !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+    transition: .2s linear !important;
+}
+body.active{
+    padding-left: 35rem;
+}
+
+section{
+    padding:3rem 2rem ;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+.heading{
+    margin-bottom:3rem ;
+    text-align: center;
+}
+.heading span{
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    border-bottom: var(--border-bold);
+
+}
+.what-i-do span{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    border-bottom: var(--border-bold) !important;
+ 
+
+}
+.btn{
+   padding: 10px !important;
+    display: inline-block;
+    margin-top: 1re;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    color: var(--color-text);
+    font-size: 2rem !important;
+    border:var(--border-bold-light) !important;
+}
+.btn:hover{
+    background-color: var(--color-text);
+    color: var(--bg) !important;
+}
+.header {
+   
+    position: fixed;
+    top: 0;
+    left: -35rem;
+    background-color: var(--color-text);
+    height: 100vh;
+    width: 35rem;
+    padding: 3rem 2rem;
+    padding-bottom: 9rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-flow: column;
+    transition: .2s linear !important;
+    align-content: center;
+}
+.header .logo{
+    
+    text-transform: uppercase;
+    border-bottom: var(--border-bold--white);
+    font-weight: bolder;
+    font-size: 4.5rem;
+    color: var(--bg) !important;
+}
+.header .navbar {
+    width: 100% !important ;
+    display: block !important;
+}
+ .header .navbar a{
+    display: block !important;
+    color: var(--bg) !important;
+    padding: 1.5rem;
+    margin: .5rem;
+    font-size: 2.5rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover{
+    background-color: var(---hover--);
+    color: black !important;
+}
+
+.header .social-media a{
+    font-size: 3rem;
+    color: var(--bg) !important;
+    margin: 1rem;
+    transition: .2s linear !important;
+}
+.header .social-media a:hover{
+    transform: rotate(360deg);
+}
+
+#menu-btn{
+    height: 4.5rem;
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color:var(--color);
+    color: var(--bg);
+}
+.header.active{
+    left: 0;
+    transition: .2s linear !important;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.home .image {
+    flex: 1 1 40rem;
+}
+.home .image img{
+    height: 50rem;
+    padding: 2rem;
+
+}
+.home .content{
+    flex: 1 1 40rem;
+    font-family: 'Tai Heritage Pro', serif;
+}
+.home .content h3{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    font-weight: 900;
+}
+.home .content p{
+    font-size: 1.6rem;
+    line-height: 2;
+    
+    color: black;
+}
+.home .content span{
+    font-family: 'Tai Heritage Pro', serif;
+    font-weight: 900;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--color);
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.about .what-i-do p{
+    margin: 2rem auto;
+    max-width: 70rem !important;
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+.about .what-i-do .bio{
+    margin-top: 1rem;
+}
+.bio h3 span{
+    display: flex !important;
+    padding: 1rem 1.5rem ;
+    display: inline-block;
+    margin: 1rem ;
+    border: var(--border-bold-light);
+    background-color: var(--bg) ;
+    color: var(--color-text) ;
+    word-break: break-all ;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 2.5rem;
+
+}
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body.active{
+        padding-left: 0;
+
+    }
+    
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header.active{
+        padding-top: 7rem;
+    }
+#menu-btn.fa-times{
+    right: 0;
+}
+.home .image img{
+    height: auto;
+    width: 100%;
+}
+.heading span{
+    font-size:4rem ;
+
+}
+}
