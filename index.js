@@ -4,7 +4,8 @@ let body = document.querySelectorAll('.body');
 let toggleDark = document.getElementById('toggleDark');
 let contactBtn= document.getElementById('contact-btn');
 let messageContainer = document.querySelector('.send-message1 ');
-let btnTop = document.querySelector('.backToTop')
+let btnTop = document.querySelector('.backToTop');
+let navbar = document.querySelectorAll('.navbar')
 
 
 menu.addEventListener('click' , () =>{
@@ -16,13 +17,17 @@ menu.addEventListener('click' , () =>{
   
 
 })
-window.onscroll = () => {
-    if(window.innerWidth < 991){
-        menu.classList.remove('fa-times');
-    header.classList.remove('active')
-    document.body.classList.remove('active')
-    }
-}
+navbar.forEach(item => {
+    item.addEventListener('click' , () =>{
+        if(window.innerWidth < 991){
+            menu.classList.remove('fa-times');
+        header.classList.remove('active')
+        document.body.classList.remove('active')
+        }
+        
+    })
+})
+
 window.onscroll = () =>{
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
         btnTop.style.display = 'block'
