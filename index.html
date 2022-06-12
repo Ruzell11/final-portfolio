@@ -33,14 +33,15 @@
   
 </header>
 <div class="toggle-dark-mode p-2">
-    
     <i class="fa-solid fa-moon" id="toggleDark" style="font-size: 40px; color: whitesmoke;"></i>
- 
 </div>
   
 
 <div class="body">
-   
+    <div class="backToTop">
+        <h3>Back To Top</h3>
+        <i class="fa fa-rocket" aria-hidden="true" id="backToTopBtn"></i>
+    </div>
     <section class="home" id="Home">
         <div class="image">
             <img src="./received_539724801092870 (1).webp" alt="">
@@ -71,7 +72,7 @@
         </div>
     </section>
 
-    <section class="skills " id="Skills">
+    <section class="skills reveal" id="Skills">
         <h1 class="heading"><span class="fw-bold">Skills</span></h1>
         <div class="container w-100">
         <div class="skills-picture mx-auto">
@@ -83,32 +84,32 @@
         </div>
         </div>
     </section>
-    <section class="projects" id="Projects">
+    <section class="projects  reveal" id="Projects">
         <h1 class="heading"><span class="fw-bold">Projects</span></h1>
         <div class="content-project">
             <div class="info-project">
-                <img src="./project1.jpg" alt="" class="w-100 image">
+                <img src="./project1.jpg" alt="" class="w-100 image project-image">
                 <div class="text-overlay">
                     <h3 class="title-text">Static Ecommerce Website</h3>
                     <p class="text">Html , Css , Bootstrap</p>
                 </div>
             </div>
             <div class="info-project">
-                <img src="./project3.jpg" alt="" class="w-100 image">
+                <img src="./project3.jpg" alt="" class="w-100 image project-image">
                 <div class="text-overlay">
                     <h3  class="title-text"> Pokemon Card Generator</h3>
                     <p  class="text">JSX , REACT , CSS</p>
                 </div>
             </div>
             <div class="info-project">
-                <img src="./project4.jpg" alt="" class="w-100 image">
+                <img src="./project4.jpg" alt="" class="w-100 image project-image">
                 <div class="text-overlay">
                     <h3  class="title-text">SIMPLE NOTE</h3>
                     <p  class="text">Html , Css  ,Bootstrap JS</p>
                 </div>
             </div>
             <div class="info-project">
-                <img src="./project5.jpg" alt="" class="w-100 image">
+                <img src="./project5.jpg" alt="" class="w-100 image project-image">
                 <div class="text-overlay">
                     <h3  class="title-text">Meme generator</h3>
                     <p  class="text">JSX , REACT , CSS</p>
@@ -117,6 +118,40 @@
         </div>
 
     </section>
+    <section class="Contact" id="Contact">
+        <h1 class="heading"><span class="fw-bold">Contact</span></h1>
+        <form class="form-group">
+            <fieldset>
+            <legend>Your contact information</legend>
+            <p >
+            <label><strong>Name:</strong></label>(required)<br />
+            <input type="text" name="name" value="" />
+            </p>
+            <p >
+            <label><strong>E-mail:</strong></label>(required)<br />
+            <input type="text" name="email" value="" />
+            </p>
+            <p >
+            <label><strong>Subject:</strong></label>(required)<br />
+            <input type="text" name="subject" value="" />
+            </p><br />
+            </fieldset>
+            <fieldset>
+            <legend>Your message</legend>
+            <p >
+            <label><strong>Message:</strong></label>(required)<br />
+            <textarea name="comments" rows="7" cols="50" ></textarea>
+             <p>
+                <button type="reset" id="contact-btn" class="button">Send</button>
+            </p>
+            <div class="send-message  ">
+                <p class="text-center send-message1" ></p>
+              </div>
+            </fieldset>
+            </form>
+
+    </section>
+
 </div>
     
 </body>
