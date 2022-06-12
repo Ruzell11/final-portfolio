@@ -27,6 +27,8 @@ body.forEach(item = (event) => {
         menu.classList.remove('fa-times');
         header.classList.toggle('header-mode')
         document.body.classList.remove('active')
+        menu.classList.toggle('menu-btn');
+       
     })
 })
 
