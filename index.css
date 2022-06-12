@@ -8,10 +8,36 @@
     --border-bold: .5rem solid var(--color-text);
     --border-bold-light: .2rem solid var(--color-text);
     --border-bold--white: .2rem solid var(--bg);
-    ---hover--:beige
+    ---hover--:beige;
+    --bg-body-color:beige;
+    --color-btn:black;
 
 }
+.menu-btn{
+    --color:#B58B00;
+    --color-btn:black;
+}
+.header-mode{
+    --bg:#ADEFD1FF!important;
+    --color-text:#020035;
+}
 
+.header-mode-whitemode{
+    --color-text:#EDE9E8;
+    --bg:black!important;
+    ---hover--:black;
+   
+}
+.body-mode{
+    --bg-body-color:black !important;
+    --color-text:whitesmoke;
+    --border-bold-light: .2rem solid var(--color-text);
+    --bg:black;
+    --border-bold--white: .2rem solid var(--bg);
+    --border-bold: .5rem solid var(--color-text);
+    --color:beige;
+    --color-btn:black;
+}
 *{
     text-decoration: none !important;
     color: var(--color-text) !important;
@@ -29,7 +55,7 @@ html{
 body{
     overflow: hidden;
     transition: .2s linear !important;
-    background-color: var(---hover--) !important;
+    background-color: var( --bg-body-color) !important;
 }
 body.active{
     padding-left: 35rem;
@@ -114,7 +140,7 @@ section{
 .header .navbar a.active,
 .header .navbar a:hover{
     background-color: var(---hover--);
-    color: black !important;
+    color: var(--color-text)!important;
 }
 
 .header .social-media a{
@@ -137,7 +163,7 @@ section{
     font-size: 2.5rem;
     cursor: pointer;
     background-color:var(--color);
-    color: var(--bg);
+    color: var(--color-btn) !important;
 }
 .header.active{
     left: 0;
@@ -163,6 +189,7 @@ section{
     font-family: 'Tai Heritage Pro', serif;
 }
 .home .content h3{
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-size: 5rem;
     margin-bottom: .5rem;
@@ -172,7 +199,7 @@ section{
     font-size: 1.6rem;
     line-height: 2;
     
-    color: black;
+    color: var(--bg);
 }
 .home .content span{
     font-family: 'Tai Heritage Pro', serif;
@@ -180,6 +207,7 @@ section{
     display: inline-block;
     padding: 1rem;
     background-color: var(--color);
+    color: var(--color-btn) !important;
     font-size: 3rem;
     margin: 1rem 0;
 }
@@ -235,6 +263,10 @@ section{
 .pict:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.toggle-dark-mode{
+    float: right;
+    cursor: pointer;
+}
 
 /*  */
 
@@ -256,6 +288,8 @@ section{
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color);
   }
+
+
 
 
 @media (max-width:991px){
