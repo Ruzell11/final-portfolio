@@ -11,6 +11,7 @@
     ---hover--:beige;
     --bg-body-color:#F5F1E9;
     --color-btn:black;
+    --button-overlay:#EBAC87;
 
 }
 .menu-btn{
@@ -38,6 +39,7 @@
     --border-bold: .5rem solid var(--color-text);
     --color:beige;
     --color-btn:black;
+    --button-overlay:#E38C59;
 }
 *{
     text-decoration: none !important;
@@ -340,9 +342,10 @@ flex-direction: column;
     cursor: pointer;
 }
 
-.info-project:hover .image{
+.info-project:hover .image {
     opacity: 0.3;
 }
+
 .info-project:hover .text-overlay{
     opacity: 1;
 }
@@ -364,6 +367,35 @@ flex-direction: column;
     color:var( --bg) !important ;
     text-transform: uppercase;  
 }
+.info-project1{
+    position: relative;
+    width: 100%;
+}
+
+.text-overlay1{
+    transition: .3s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.info-project1:hover .me-image1 {
+    opacity: 0.3;
+}
+
+.info-project1:hover .text-overlay1{
+    opacity: 1;
+}
+.button-overlay-me{ border: none;
+     background-color:var(--button-overlay) !important; 
+     color: var(--color-btn) !important; 
+     border-radius: 10px;
+    }
 .Contact{
     min-height: 100vh;
     justify-content: center;
@@ -424,6 +456,16 @@ display: none;
   font-size: 18px;
 
 }
+
+.me-image{
+    z-index: 0;
+    opacity: 1;
+  
+    transition: .2s linear;
+    
+ 
+  
+}
 .backToTop h3{
     font-family: 'Courier New', Courier, monospace;
     color: var(--bg) !important;
@@ -431,6 +473,7 @@ display: none;
 .backToTop i{
     color: var(--bg) !important;
 }
+
 /*  */
 
 ::-webkit-scrollbar {
